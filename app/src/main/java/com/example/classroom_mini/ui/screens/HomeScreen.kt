@@ -3,7 +3,6 @@ package com.example.classroom_mini.ui.screens
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
@@ -33,15 +32,24 @@ fun HomeScreen(
 ) {
     Scaffold(
         bottomBar = {
-            BottomAppBar() {
+            BottomAppBar {
                 IconButton(onClick = { /*TODO*/ }) {
-                    HomeIcon(color = Color.Blue)
+                    HomeIcon(
+                        color = Color.Blue,
+                        modifier = Modifier.weight(0.1f)
+                    )
                 }
                 IconButton(onClick = onClickToAssign) {
-                    AssignIcon(color = Color.Black)
+                    AssignIcon(
+                        color = Color.Black,
+                        modifier = Modifier.weight(0.1f)
+                    )
                 }
                 IconButton(onClick = onClickToPeople) {
-                    PeopleIcon(color = Color.Black)
+                    PeopleIcon(
+                        color = Color.Black,
+                        modifier = Modifier.weight(0.1f)
+                    )
                 }
             }
         }
@@ -62,7 +70,10 @@ fun HomeScreen(
 }
 
 @Composable
-fun HomeIcon(color: Color) {
+fun HomeIcon(
+    color: Color,
+    modifier: Modifier
+) {
     Image(
         imageVector = Icons.Sharp.Home,
         contentDescription = "HomeIcon",
@@ -70,17 +81,25 @@ fun HomeIcon(color: Color) {
     )
 }
 
+
 @Composable
-fun AssignIcon(color: Color) {
+fun AssignIcon(
+    color: Color,
+    modifier: Modifier
+) {
     Image(
         imageVector = Icons.Sharp.Assignment,
         contentDescription = "HomeIcon",
-        colorFilter = ColorFilter.tint(color)
+        colorFilter = ColorFilter.tint(color),
     )
 }
 
+
 @Composable
-fun PeopleIcon(color: Color) {
+fun PeopleIcon(
+    color: Color,
+    modifier: Modifier
+) {
     Image(
         imageVector = Icons.Sharp.People,
         contentDescription = "HomeIcon",
@@ -92,6 +111,6 @@ fun PeopleIcon(color: Color) {
 @Composable
 fun HomeScreenPreview() {
     MaterialTheme {
-        HomeScreen(modifier = Modifier,{},{})
+        HomeScreen(modifier = Modifier, {}, {})
     }
 }
