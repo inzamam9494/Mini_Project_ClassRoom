@@ -26,13 +26,16 @@ fun PeopleScreen(modifier: Modifier,
         bottomBar = {
             BottomAppBar() {
                 IconButton(onClick = onClickToHome) {
-                    HomeIcon(color = Color.Black)
+                    HomeIcon(color = Color.Black,
+                        modifier = Modifier.weight(0.1f))
                 }
                 IconButton(onClick = onClickToAssign) {
-                    AssignIcon(color = Color.Black)
+                    AssignIcon(color = Color.Black,
+                        modifier = Modifier.weight(0.1f))
                 }
                 IconButton(onClick = { /*TODO*/ }) {
-                    PeopleIcon(color = Color.Blue)
+                    PeopleIcon(color = Color.Blue,
+                        modifier = Modifier.weight(0.1f))
                 }
             }
         }
