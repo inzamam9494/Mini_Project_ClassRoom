@@ -26,13 +26,16 @@ fun AssignmentScreen(modifier: Modifier,
         bottomBar = {
             BottomAppBar() {
                 IconButton(onClick = onClickToHome) {
-                    HomeIcon(color = Color.Black)
+                    HomeIcon(color = Color.Black,
+                        modifier = Modifier.weight(0.1f))
                 }
                 IconButton(onClick = { /*TODO*/ }) {
-                    AssignIcon(color = Color.Blue)
+                    AssignIcon(color = Color.Blue,
+                        modifier = Modifier.weight(0.1f))
                 }
                 IconButton(onClick = onClickToPeople) {
-                    PeopleIcon(color = Color.Black)
+                    PeopleIcon(color = Color.Black,
+                        modifier = Modifier.weight(0.1f))
                 }
             }
         }
