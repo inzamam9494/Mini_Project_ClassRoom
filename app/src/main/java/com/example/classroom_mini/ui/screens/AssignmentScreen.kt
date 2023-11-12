@@ -30,7 +30,7 @@ fun AssignmentScreen(modifier: Modifier,
                         modifier = Modifier.weight(0.1f))
                 }
                 IconButton(onClick = { /*TODO*/ }) {
-                    AssignIcon(color = Color.Blue,
+                    AssignIcon(color = Color.Green,
                         modifier = Modifier.weight(0.1f))
                 }
                 IconButton(onClick = onClickToPeople) {
