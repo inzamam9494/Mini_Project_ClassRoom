@@ -34,7 +34,7 @@ fun PeopleScreen(modifier: Modifier,
                         modifier = Modifier.weight(0.1f))
                 }
                 IconButton(onClick = { /*TODO*/ }) {
-                    PeopleIcon(color = Color.Green,
+                    PeopleIcon(color = Color.Blue,
                         modifier = Modifier.weight(0.1f))
                 }
             }

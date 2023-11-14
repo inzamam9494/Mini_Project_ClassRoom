@@ -35,7 +35,7 @@ fun HomeScreen(
             BottomAppBar {
                 IconButton(onClick = { /*TODO*/ }) {
                     HomeIcon(
-                        color = Color.Green,
+                        color = Color.Blue,
                         modifier = Modifier.weight(0.1f)
                     )
                 }
